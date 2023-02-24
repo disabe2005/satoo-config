@@ -1,0 +1,24 @@
+server:
+  port: 8084
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/saletoolsdb?autoReconnect=true&useSSL=false
+    username: root
+    password: baccal
+#sudo mysql
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'baccal';  #### A faire apres installation de mysql 8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    platform: mysql
+  batch.initialize-schema: always
+#spring.jpa.hibernate.ddl-auto=create-drop
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        ddl-auto: update
+        enable_lazy_load_no_trans: true
+
+#App jwt Properties
+#syade.app.jwtSecret= sabechMbahinSecretKey
+#syade.app.jwtExpirationMs= 86400000
