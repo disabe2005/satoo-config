@@ -16,7 +16,7 @@ spring:
     properties:
       hibernate:
         #dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-        ddl-auto: update
+        ddl-auto: create
         enable_lazy_load_no_trans: true
 
 #App jwt Properties
