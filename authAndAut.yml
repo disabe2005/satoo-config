@@ -18,4 +18,4 @@ spring:
         #dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         enable_lazy_load_no_trans: true
     generate-ddl: true
-    ddl-auto: create
+    ddl-auto: update
