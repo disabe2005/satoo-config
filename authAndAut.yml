@@ -16,9 +16,6 @@ spring:
     properties:
       hibernate:
         #dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-        ddl-auto: create
         enable_lazy_load_no_trans: true
-
-#App jwt Properties
-#syade.app.jwtSecret= sabechMbahinSecretKey
-#syade.app.jwtExpirationMs= 86400000
+    generate-ddl: true
+    ddl-auto: create
